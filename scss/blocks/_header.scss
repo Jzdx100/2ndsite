@@ -1,0 +1,32 @@
+.nav-item{
+    font-family: $nmed;
+    font-size:1.8rem ;
+}
+.signin{
+    @include button;
+    font-size: 1rem;
+}
+
+.container-fluid.nav-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.container-fluid.nav-grid .offcanvas{
+    align-items: end;
+    padding-right: 4rem;
+}
+
+
+@media screen and (max-width: 991px) { 
+    .container-fluid.nav-grid{
+        display: flex;
+    }
+    .container-fluid.nav-grid:nth-child(2){
+        align-self: unset;
+    }
+    .container-fluid.nav-grid .offcanvas{
+        align-items: unset;
+        padding-right: 0;
+    }
+} 

@@ -1,0 +1,124 @@
+input { 
+    outline: 0; 
+} 
+ @mixin base_padding{
+    padding-left: clamp(10px, 3vw ,25px);
+    padding-right: clamp(10px, 3vw ,25px);
+}
+.wrapper{ 
+    @include base_padding; 
+} 
+ 
+html{ 
+    overflow-x: hidden; 
+    cursor: default; 
+     
+    -ms-overflow-style: none;  /* IE и Edge */ 
+    scrollbar-width: none;  /* Firefox */ 
+    scrollbar-gutter: stable; 
+     
+    font-size: 15px; 
+} 
+ 
+@media screen and (min-width: 576px) { 
+    html { 
+        font-size: 11px; 
+    } 
+} 
+ 
+@media screen and (min-width: 768px) { 
+    html { 
+        font-size: 12px; 
+    } 
+} 
+ 
+@media screen and (min-width: 992px) { 
+    html { 
+        font-size: 13px; 
+    } 
+} 
+ 
+@media screen and (min-width: 1200px) { 
+    html { 
+        font-size: 14px; 
+    } 
+} 
+ 
+@media screen and (min-width: 1400px) { 
+    html { 
+        font-size: 15px;  /* Размер для экранов шире 1400px */ 
+    } 
+} 
+ 
+ 
+*{ 
+    margin: 0; 
+    box-sizing: border-box; 
+    padding: 0; 
+    text-decoration: none; 
+    // outline: green solid 1px !important;
+}
+
+
+
+@font-face {
+    font-family: sf_reg;
+    src: url(/fonts/SFProText-Regular.ttf);
+}
+@font-face {
+    font-family: sf_med;
+    src: url(/fonts/SFProText-Medium.ttf);
+}
+@font-face {
+    font-family: sf_light;
+    src: url(/fonts/SFProText-Light.ttf);
+}
+@font-face {
+    font-family: sf_sbold;
+    src: url(/fonts/SFProText-Semibold.ttf);
+}
+@font-face {
+    font-family: sf_bold;
+    src: url(/fonts/SFProText-Bold.ttf);
+}
+
+@font-face {
+    font-family: n_reg;
+    src: url(/fonts/Nekst-Light.ttf);
+}
+@font-face {
+    font-family: n_med;
+    src: url(/fonts/Nekst-Medium.ttf);
+}
+@font-face {
+    font-family: n_light;
+    src: url(/fonts/Nekst-Regular.ttf);
+}
+@font-face {
+    font-family: n_sbold;
+    src: url(/fonts/Nekst-SemiBold.ttf);
+}
+$nreg: n_reg;
+$nbold: n_bold;
+$nmed: n_med;
+$nlight: n_light;
+$nsemi: n_sbold;
+$sfreg: sf_reg;
+$sfbold: sf_bold;
+$sfmed: sf_med;
+$sfsemi: sf_sbold;
+$sflight: sf_light;
+
+
+@mixin button{
+    font-family: $nmed;
+    border-radius: 60px;
+    background-color:#5F29B7 ;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 0.6rem 3rem;
+    white-space: nowrap;
+    width: max-content;
+}

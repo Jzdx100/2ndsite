@@ -1,0 +1,33 @@
+.h2_partners_text{
+    font-family: $nlight;
+    font-size: clamp(15px, 2vw ,40px );
+    white-space: nowrap;
+    color: #B0A3C9;
+}
+.h1_partners_text{
+    font-family: $nmed;
+    font-size: clamp(48px, 5vw ,102px );
+    white-space: nowrap;
+}
+.hero_partners{
+    margin-top: 10rem;
+}
+.H2_partners{
+    font-family: $nlight;
+    font-size: clamp(35px, 5vw ,102px );
+}
+.H1_partners_card{
+    font-family: $nlight;
+    font-size: clamp(35px, 5vw ,102px );
+}
+.partners_card{
+    background-color: #6D45B9;
+    padding: 4rem;
+    border-radius: 38px;
+    margin-top: 8rem;
+}
+ul{
+    font-family: $nlight;
+    font-size: clamp(15px, 2vw ,35px );
+    list-style-type: "- ";
+}

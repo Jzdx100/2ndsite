@@ -1,0 +1,50 @@
+.header_text{
+    font-family: $nmed;
+    font-size: clamp(2rem, 3vw,6rem);
+    height: 60px;
+    padding: 0;
+    margin: 0;
+}
+.sectionheader{
+    border: 1px solid #8E67CC;
+    border-bottom: 0;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding: 5px 22px;
+    padding-bottom: 0;
+    margin-bottom: 3.5rem;
+}
+.sec_frame_h1{
+    font-family: $nlight;
+    font-size: clamp(6rem, 8vw, 12rem);
+    white-space: nowrap;
+}
+.sec_frame_h2{
+    font-family: $nreg;
+    font-size: 3rem;
+}
+.numbers_card_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-self: flex-end;
+    gap: 1rem;
+}
+.numbers_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 2rem;
+    gap: 50px;
+}
+.cardH1{
+    font-family: $nlight;
+    font-size: clamp(2rem, 3vw, 6.5rem);
+    white-space: nowrap;
+}
+.cardH2{
+    font-family: $nreg;
+    font-size: clamp(.8rem, 1vw, 1.5rem);
+}

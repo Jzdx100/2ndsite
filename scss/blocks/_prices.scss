@@ -1,0 +1,46 @@
+.H1_prices{
+    font-family: $nlight;
+    font-size: clamp(15px, 2vw ,40px );
+    color: #CDC2E1;
+}
+.H2_prices{
+    font-family: $nlight;
+    font-size: clamp(15px, 2vw ,40px );
+    color: #CDC2E1;
+}
+.numbers_card_prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #0D0D13;
+    padding: 2rem;
+    gap: 50px;
+}
+.numbers_card_prices img{
+    width: 7rem;
+    align-self: end;
+}
+.numbers_card_prices p{
+font-family: $nreg;
+font-size: clamp(15px, 2vw ,35px );
+}
+.sec_frame_h2_prices{
+    font-family: $nreg;
+    font-size: clamp(30px, 4vw ,80px );
+    margin-top: 5rem;
+}
+.class_p_prices{
+    font-family: $nlight;
+    font-size: clamp(30px, 4vw ,80px );
+}
+.class_p_prices2{
+    font-family: $nlight;
+    font-size: clamp(5px, 3vw ,30px );
+    margin-top: 5rem;
+}
+.pink{
+    background-color: #663ab8;
+    padding: clamp(40px, 4vw ,100px );
+    border-radius: 40px;
+}
